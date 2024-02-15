@@ -394,8 +394,7 @@ func (e *extractor) getPrimitiveType(t reflect.Type) (*TypescriptType, error) {
 	switch kind {
 	case reflect.Bool:
 		return mktype("boolean"), nil
-	case reflect.Array,
-		reflect.Slice:
+	case reflect.Array, reflect.Slice:
 		elem, err := e.getType(t.Elem(), nil)
 		if err != nil {
 			return nil, err
@@ -434,6 +433,8 @@ func (e *extractor) getPrimitiveType(t reflect.Type) (*TypescriptType, error) {
 		return e.getType(t.Elem(), nil)
 	case reflect.String:
 		return mktype("string"), nil
+	case reflect.Interface:
+		return mktype("any"), nil
 	}
 	return nil, fmt.Errorf("cannot get primitive Typescript type for %v (%v)", t, kind)
 }
