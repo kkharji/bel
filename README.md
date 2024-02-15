@@ -1,12 +1,12 @@
 # [bel](https://en.wikipedia.org/wiki/Bel_(mythology))
 Generate TypeScript interfaces from Go structs/interfaces - useful for JSON RPC
 
-[![Go Report Card](https://goreportcard.com/badge/github.com/32leaves/bel)](https://goreportcard.com/report/github.com/32leaves/bel)
-[![GoDoc](https://godoc.org/github.com/32leaves/bel?status.svg)](https://godoc.org/github.com/32leaves/bel)
-[![gocover.run](https://gocover.run/github.com/32leaves/bel.svg?style=flat&tag=1.10)](https://gocover.run?tag=1.10&repo=github.com%2F32leaves%2Fbel)
+[![Go Report Card](https://goreportcard.com/badge/github.com/kkharji/bel)](https://goreportcard.com/report/github.com/kkharji/bel)
+[![GoDoc](https://godoc.org/github.com/kkharji/bel?status.svg)](https://godoc.org/github.com/kkharji/bel)
+[![gocover.run](https://gocover.run/github.com/kkharji/bel.svg?style=flat&tag=1.10)](https://gocover.run?tag=1.10&repo=github.com%2Fkkharji%2Fbel)
 [![Stability: Active](https://masterminds.github.io/stability/active.svg)](https://masterminds.github.io/stability/active.html)
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io#github.com/32leaves/bel)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io#github.com/kkharji/bel)
 
 `bel` is used in production in https://gitpod.io.
 
@@ -16,7 +16,7 @@ Generate TypeScript interfaces from Go structs/interfaces - useful for JSON RPC
 package main
 
 import (
-    "github.com/32leaves/bel"
+    "github.com/kkharji/bel"
 )
 
 type Demo struct {
@@ -61,7 +61,7 @@ package main
 
 import (
     "os"
-    "github.com/32leaves/bel"
+    "github.com/kkharji/bel"
 )
 
 type DemoService interface {
@@ -90,7 +90,7 @@ export interface DemoService {
 ```
 
 ## Advanced Usage
-You can try all the examples mentioned below in [Gitpod](https://gitpod.io#github.com/32leaves/bel).
+You can try all the examples mentioned below in [Gitpod](https://gitpod.io#github.com/kkharji/bel).
 
 ### FollowStructs
 Follow structs enable the transitive generation of types. See [examples/embed-structs.go](examples/follow-structs.go).
@@ -137,4 +137,4 @@ You can configure the `io.Writer` that _bel_ uses using `bel.GenerateOutputTo`.
 # Contributing
 All contributions/PR/issue/beer are welcome ❤️.
 
-It's easiest to work with _bel_ using Gitpod: [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io#github.com/32leaves/bel)
+It's easiest to work with _bel_ using Gitpod: [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io#github.com/kkharji/bel)

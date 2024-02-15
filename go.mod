@@ -1,4 +1,4 @@
-module github.com/32leaves/bel
+module github.com/kkharji/bel
 
 go 1.12
 
